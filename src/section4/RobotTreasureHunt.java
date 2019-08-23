@@ -60,9 +60,9 @@ if(robotXLocation == 730 && robotYLocation == 420)
 if(robotXLocation == 670 && robotYLocation == 240)
 {
 	robot.moveTo(290, 120);
-	JOptionPane.showMessageDialog(null, "You have been launched to the skull! Climb down the tree.");
+	JOptionPane.showMessageDialog(null, "You have been launched to the skull! Climb down the tree to the bottle.");
 }
-if(robotXLocation == 290 && robotYLocation == 260)
+if(robotXLocation == 430 && robotYLocation == 520)
 {
 	JOptionPane.showMessageDialog(null, "Go to the bottle and smash it to get the map! (Type smash when you get to it.)");
 }
@@ -71,14 +71,14 @@ if(robotXLocation == 430 && robotYLocation == 520)
 	String smash = JOptionPane.showInputDialog("What do you want to do?");
 	if(smash.equalsIgnoreCase("smash"))
 	{
-		JOptionPane.showMessageDialog(null, "You've found a map! It leads you to the boy, where you have to push down his pump! (Type push down when you get to it.)");
+		JOptionPane.showMessageDialog(null, "You've found a map! It leads you to the boy, where you have to push down his pump! (Type push when you get to it.)");
 	}
 	
 }
 if(robotXLocation == 150 && robotYLocation == 380)
 {
 	String push = JOptionPane.showInputDialog("what do you want to do?");
-	if(push.equalsIgnoreCase("push down"))
+	if(push.equalsIgnoreCase("push"))
 	{
 	Robot robot2 = new Robot("batman");
 	robot2.moveTo(70, 260);
@@ -88,12 +88,12 @@ if(robotXLocation == 150 && robotYLocation == 380)
 		robot2.move(100);	
 		robot2.turn(90);
 		robot2.moveTo(50, 400);
-		JOptionPane.showMessageDialog(null, "The bat flies from it's hiding spot and flies to the treasure. Follow it!");
+	}
+		JOptionPane.showMessageDialog(null, "The bat flies from it's hiding spot and leads you to the treasure. Follow it!");
 
 	}
 	}
 
-}
 		// 8. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
 		
